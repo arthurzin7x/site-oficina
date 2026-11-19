@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Center Silva - Mecânica Especializada</title>
+    <!-- Fonte moderna do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">AUTO<span>SILVA</span></div>
+        <nav class="menu">
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Diferenciais</a>
+            <a href="#orcamento" class="btn-nav">Agendar</a>
+        </nav>
+    </header>
+
+    <!-- Banner Principal (Hero) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu carro em boas mãos, sem surpresa no orçamento.</h1>
+            <p>Especialistas em revisão preventiva, freios, suspensão e injeção eletrônica.</p>
+            <a href="#orcamento" class="btn-principal">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Secção de Serviços -->
+    <section id="servicos" class="secao servicos">
+        <div class="secao-topo">
+            <h2>Nossos Serviços</h2>
+            <p>Manutenção completa com foco em segurança, desempenho e durabilidade.</p>
+        </div>
+
+        <div class="grid-servicos">
+            <article class="card-servico">
+                <span class="tag-servico">01</span>
+                <h3>Troca de Óleo e Filtros</h3>
+                <p>Lubrificação adequada e substituição de filtros para proteger o motor no dia a dia.</p>
+            </article>
+
+            <article class="card-servico">
+                <span class="tag-servico">02</span>
+                <h3>Freios e Suspensão</h3>
+                <p>Verificação de pastilhas, discos, amortecedores e buchas para maior estabilidade.</p>
+            </article>
+
+            <article class="card-servico">
+                <span class="tag-servico">03</span>
+                <h3>Injeção Eletrônica</h3>
+                <p>Diagnóstico computadorizado para identificar falhas, melhorar o consumo e a resposta.</p>
+            </article>
+
+            <article class="card-servico">
+                <span class="tag-servico">04</span>
+                <h3>Alinhamento e Balanceamento</h3>
+                <p>Mais conforto ao dirigir, direção firme e desgaste uniforme dos pneus.</p>
+            </article>
+
+            <article class="card-servico">
+                <span class="tag-servico">05</span>
+                <h3>Ar-Condicionado</h3>
+                <p>Limpeza, verificação de carga de gás e manutenção do sistema de climatização.</p>
+            </article>
+
+            <article class="card-servico">
+                <span class="tag-servico">06</span>
+                <h3>Revisão Preventiva</h3>
+                <p>Check-up completo antes de viagens ou trocas de estação para evitar imprevistos.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Secção de Diferenciais -->
+    <section id="sobre" class="secao diferenciais">
+        <div class="secao-topo">
+            <h2>Por que escolher a Auto Silva?</h2>
+            <p>Compromisso real com o que é feito no seu veículo do começo ao fim.</p>
+        </div>
+
+        <div class="grid-diferenciais">
+            <div class="item-diferencial">
+                <div class="icone-box">✓</div>
+                <div>
+                    <h3>Orçamento Claro e Aprovado Antes</h3>
+                    <p>Você sabe exatamente o que precisa ser trocado e o valor combinado antes de iniciarmos qualquer serviço.</p>
+                </div>
+            </div>
+
+            <div class="item-diferencial">
+                <div class="icone-box">⚙</div>
+                <div>
+                    <h3>Peças de Qualidade e Garantia</h3>
+                    <p>Trabalhamos com peças de procedência confiável e garantia de serviço para rodar com tranquilidade.</p>
+                </div>
+            </div>
+
+            <div class="item-diferencial">
+                <div class="icone-box">⚡</div>
+                <div>
+                    <h3>Agilidade no Atendimento</h3>
+                    <p>Processos organizados e diagnóstico direto ao ponto para devolver seu carro no prazo combinado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção de Orçamento Rápido -->
+    <section id="orcamento" class="secao orcamento">
+        <div class="secao-topo">
+            <h2>Solicite seu Orçamento</h2>
+            <p>Preencha os dados do veículo abaixo e envie direto para o nosso WhatsApp.</p>
+        </div>
+
+        <form id="form-orcamento" class="form-box">
+            <div class="campo">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" placeholder="Ex: Carlos Eduardo" required>
+            </div>
+
+            <div class="campo">
+                <label for="veiculo">Modelo e Ano do Carro</label>
+                <input type="text" id="veiculo" placeholder="Ex: Onix 1.0 2020" required>
+            </div>
+
+            <div class="campo">
+                <label for="servico">Serviço Desejado</label>
+                <select id="servico" required>
+                    <option value="">Selecione um serviço...</option>
+                    <option value="Troca de Óleo e Filtros">Troca de Óleo e Filtros</option>
+                    <option value="Freios e Suspensão">Freios e Suspensão</option>
+                    <option value="Injeção Eletrônica">Injeção Eletrônica</option>
+                    <option value="Alinhamento e Balanceamento">Alinhamento e Balanceamento</option>
+                    <option value="Ar-Condicionado">Ar-Condicionado</option>
+                    <option value="Revisão Preventiva">Revisão Preventiva</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-whatsapp">Enviar Pedido no WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="logo">AUTO<span>SILVA</span></div>
+            <p>Seg a Sex: 08h às 18h | Sáb: 08h às 12h</p>
+            <p>Av. Central, Quadra 12, Lote 05 - Centro</p>
+        </div>
+        <p class="copyright">© 2026 Auto Center Silva - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
